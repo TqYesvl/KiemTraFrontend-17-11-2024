@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Tiki.vn</title>
+    <link href="~/Content/CSS/styleLayout.css" rel="stylesheet" />
+    <link rel="icon" href="https://clipground.com/images/tiki-logo-4.jpg" type="image/x-icon" />
+</head>
+<body>
+    <div class="header-text">
+        Free ship đơn từ 45k, gim nhiều hơn cùng Tiki.vn
+    </div>
+    <!--Header-->
+    <header id="header-shop">
+        <!--Logo-->
+        <div class=logo>
+            <a href="@Url.Action("TrangChu", "Home")">
+                <img class="icon-logo" src="https://salt.tikicdn.com/ts/upload/0e/07/78/ee828743c9afa9792cf20d75995e134e.png" width="100vh" height="auto" />
+            </a>
+        </div>
+        <!--Thanh tìm kiếm-->
+        <div class="search">
+            <li>
+                <img class="icon-search" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-64.png" width="19px" height="19px" />
+                <input class="header-search" placeholder="Tìm kiếm" type="search" name="search" />
+                <!--Nút tìm kiếm-->
+                <a href="#">
+                    <b><button class="btn-search">Tìm kiếm</button></b>
+                </a>
+            </li>
+        </div>
+        <!--Trang chủ - Tài khoản - Giỏ Hàng-->
+        <div class="login">
+            <li>
+                <!--Trang chủ-->
+                <a href="@Url.Action("TrangChu", "Home")">
+                    <button class="btn-home">
+                        <img class="icon-home" src="https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_home_48px-64.png" width="19px" height="19px" />
+                        Trang chủ
+                    </button>
+                </a>
+            </li>
+            <li>
+                <!--Tài khoản-->
+                <a href="@Url.Action("TaiKhoan", "Account")">
+                    <button class="btn-account">
+                        <img class="icon-account" src="https://cdn2.iconfinder.com/data/icons/app-user-interface-6/48/User-64.png" width="19px" height="19px" />
+                        Tài khoản
+                    </button>
+                </a>
+            </li>
+            <li>
+                <!--Giỏ hàng-->
+                <a href="@Url.Action("GioHang", "GioHang")">
+                    <button class="btn-shop">
+                        <img class="icon-shop" src="https://cdn0.iconfinder.com/data/icons/iconoteka-stroke/24/iconoteka_shopping_cart__grocery_store_b_s-64.png" width="19px" height="19px" />
+                        Giỏ hàng
+                    </button>
+                </a>
+            </li>
+        </div>
+    </header>
+    <hr />
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

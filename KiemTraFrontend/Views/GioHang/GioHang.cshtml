@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "GioHang";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<link href="~/Content/CSS/styleGiohang.css" rel="stylesheet" />
+<h2>Giỏ Hàng</h2>
+<div class="sanpham">
+    <table>
+        <tr></tr>
+        <tr>
+            <td></td>
+            <td>Tên sản phẩm</td>
+            <td>Số lượng</td>
+            <td>Giá</td>
+            <td>Thành tiền</td>
+        </tr>
+        <tr>
+            <td>
+                <img claas="img-giohang" src="~/Content/imge/iphone.png" />
+            </td>
+            <td>
+                Iphone 16 Pro
+            </td>
+            <td>
+                <button class="btn-left1">-</button>
+                <input class="input-number1" type="number" name="soluong" value="1" min="1" />
+                <button class="btn-right1">+</button>
+            </td>
+            <td>
+                <p><span class="giagoc1">1000</span>&nbsp;VND</p>
+            </td>
+            <td>
+                <p><span class="gia1">1000</span>&nbsp;VND</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img claas="img-giohang" src="~/Content/imge/samsung.png" />
+            </td>
+            <td>
+                Samsung S24 Ultra
+            </td>
+            <td>
+                <button class="btn-left2">-</button>
+                <input class="input-number2" type="number" name="soluong" value="1" min="1" />
+                <button class="btn-right2">+</button>
+            </td>
+            <td>
+                <p><span class="giagoc2">2000</span>&nbsp;VND</p>
+            </td>
+            <td>
+                <p><span class="gia2">2000</span>&nbsp;VND</p>
+            </td>
+        </tr>
+    </table>
+    <button class="submit-thanhtoan">Thanh toán</button>
+    <script src="~/Scripts/Script/script.js"></script>
+</div>
